@@ -1,0 +1,79 @@
+/* Variables */
+:root {
+  --drawer-width: 0;
+}
+
+/* Styles */
+.appbar {
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width: 600px) {
+  .appbar {
+    width: calc(100% - var(--drawer-width));
+    margin-left: var(--drawer-width);
+  }
+}
+
+.title {
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+.image {
+  margin-right: 10px;
+}
+
+.menu-button {
+  margin-right: 16px;
+}
+
+@media (min-width: 600px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.search {
+  position: relative;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: background-color 0.3s;
+  margin-right: 16px;
+  margin-left: 0;
+  width: 100%;
+}
+
+.search:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.search-icon {
+  padding: 0 16px;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input {
+  padding: 8px 8px 8px 0;
+  padding-left: calc(1em + 32px);
+  transition: width 0.3s;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .search-input {
+    width: 20ch;
+  }
+}

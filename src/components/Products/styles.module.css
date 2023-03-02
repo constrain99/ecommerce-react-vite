@@ -1,0 +1,15 @@
+/* Styles */
+
+.root {
+  flex-grow: 1;
+}
+
+.toolbar {
+  min-height: 64px; /* or whatever height you want */
+}
+
+.content {
+  flex-grow: 1;
+  background-color: #fff; /* or any other color you want */
+  padding: 24px; /* or any other padding you want */
+}
